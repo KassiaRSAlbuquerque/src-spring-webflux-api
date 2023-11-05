@@ -12,7 +12,7 @@ import io.github.kassiarsalbuquerque.WebFlux.document.Playlist;
 import io.github.kassiarsalbuquerque.WebFlux.service.PlaylistServiceImpl;
 import reactor.core.publisher.Mono;
 
-@Component
+//@Component
 public class PlaylistHandler {
 
 	@Autowired

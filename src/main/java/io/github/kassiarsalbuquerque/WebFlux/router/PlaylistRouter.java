@@ -13,12 +13,12 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 
 import io.github.kassiarsalbuquerque.WebFlux.handler.PlaylistHandler;
 
-@Configuration
+//@Configuration
 public class PlaylistRouter {
 
 	//MAPEANDO ENDPOINTS C PROGRAMACAO FUNCIONAL
 	
-	@Bean
+	//@Bean
 	public RouterFunction<ServerResponse> route(PlaylistHandler handler){
 		return RouterFunctions
 				.route(GET("/playlists").and(accept(MediaType.APPLICATION_JSON)), handler::retrieveAll)
