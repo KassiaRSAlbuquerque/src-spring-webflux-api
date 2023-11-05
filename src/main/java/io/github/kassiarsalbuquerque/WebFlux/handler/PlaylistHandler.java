@@ -25,7 +25,6 @@ public class PlaylistHandler {
 				.body(BodyInserters.fromPublisher(mono.flatMap(playlistService::save), Playlist.class));
 	}
 	
-	@GetMapping
 	public Mono<ServerResponse> retrieveAll(ServerRequest request) {
 		return ServerResponse.ok()
 					.contentType(MediaType.APPLICATION_JSON)

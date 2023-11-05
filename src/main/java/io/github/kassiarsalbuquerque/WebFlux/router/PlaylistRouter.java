@@ -17,6 +17,7 @@ import io.github.kassiarsalbuquerque.WebFlux.handler.PlaylistHandler;
 public class PlaylistRouter {
 
 	//MAPEANDO ENDPOINTS C PROGRAMACAO FUNCIONAL
+	
 	@Bean
 	public RouterFunction<ServerResponse> route(PlaylistHandler handler){
 		return RouterFunctions
